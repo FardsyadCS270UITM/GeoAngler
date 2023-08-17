@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/email_bg"
+        android:drawableStart="@drawable/ic_person"
+        android:gravity="center_horizontal"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:paddingVertical="10sp"
+        android:paddingStart="20sp"
+        android:text="user email"
+        android:textColor="@color/mycolor1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/your_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Your Fish List"
+        android:textColor="@color/mycolor1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_verify_status_text" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/logout_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/your_list_title" />
+
+    <ImageView
+        android:id="@+id/posterImg"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginHorizontal="10sp"
+        android:scaleType="centerInside"
+        android:src="@drawable/fish"
+        app:layout_constraintBottom_toTopOf="@+id/logout_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/your_list_title" />
+
+    <TextView
+        android:id="@+id/email_verify_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/email_bg2"
+        android:drawableRight="@drawable/ic_error_triangle"
+        android:paddingHorizontal="15sp"
+        android:paddingVertical="8sp"
+        android:text="@string/your_email_is_not_verified"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_email" />
+
+    <Button
+        android:id="@+id/email_verify_btn_act"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/verify"
+        app:layout_constraintBottom_toBottomOf="@+id/email_verify_status_text"
+        app:layout_constraintEnd_toEndOf="@+id/user_email"
+        app:layout_constraintStart_toEndOf="@+id/email_verify_status_text"
+        app:layout_constraintTop_toTopOf="@+id/email_verify_status_text" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/mycolor_light1"
+        android:text="@string/log_out"
+        android:textColor="@color/mycolor_dark1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.4"
+        app:layout_constraintStart_toEndOf="@+id/reset_button"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/reset_password"
+        app:layout_constraintBottom_toBottomOf="@+id/logout_btn"
+        app:layout_constraintEnd_toStartOf="@+id/logout_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

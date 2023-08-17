@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/missing"
+        android:title="Search"
+        android:icon="@drawable/ic_person_search"/>
+
+    <item
+        android:id="@+id/add"
+        android:title="Map"
+        android:icon="@drawable/ic_baseline_map_24"/>
+
+    <item
+        android:id="@+id/notification"
+        android:title="@string/notification"
+        android:icon="@drawable/ic_notifications"/>
+
+    <item
+         android:id="@+id/weather"
+        android:title="Weather"
+        android:icon="@drawable/ic_baseline_thunderstorm_24"/>
+
+    <item
+        android:id="@+id/account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_account_circle"/>
+
+</menu>

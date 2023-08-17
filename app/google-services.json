@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "763735924297",
+    "firebase_url": "https://fypproj-598cc-default-rtdb.firebaseio.com",
+    "project_id": "fypproj-598cc",
+    "storage_bucket": "fypproj-598cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763735924297:android:55ac72ce8e2d380c01e998",
+        "android_client_info": {
+          "package_name": "com.hemantpatel.mpfapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763735924297-cn800mc1qp8klqa4oklgplcc2ko80fej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hemantpatel.mpfapp",
+            "certificate_hash": "32a1840a7633d3aaffd6cfe731649123928069b7"
+          }
+        },
+        {
+          "client_id": "763735924297-po735ie58hkkgop63972ip5qr24ab5j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdyB9UBbM_USnatwYPCvaENDa3G_fQ5dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763735924297-dh6s3ecje3uje16en7koc92abhkh6suh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
